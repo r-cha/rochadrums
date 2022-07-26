@@ -19,48 +19,17 @@ const Home = (props) => {
             </div>
           </div>
           <div className="home-right-side">
-            <div data-type="BurgerMenu" className="home-burger-menu">
-              <svg viewBox="0 0 1024 1024" className="home-icon">
-                <path d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"></path>
-              </svg>
-            </div>
             <div className="home-links-container">
-              <a href="#resources" className="home-link anchor">
-                Home
-              </a>
-              <a href="#process" className="home-link01 anchor">
+              <span className="home-link anchor">Home</span>
+              <a href="#process" className="home-link1 anchor">
                 Services
               </a>
-              <a href="#portfolio" className="home-link02 anchor">
+              <a href="#portfolio" className="home-link2 anchor">
                 Music
               </a>
-              <a href="#contact" className="home-link03 anchor">
+              <a href="#contact" className="home-link3 anchor">
                 Contact
               </a>
-            </div>
-          </div>
-          <div data-type="MobileMenu" className="home-mobile-menu">
-            <div className="home-container2">
-              <img
-                alt="image"
-                src="https://play.teleporthq.io/static/svg/default-img.svg"
-                className="home-image"
-              />
-              <div data-type="CloseMobileMenu" className="home-close-menu">
-                <svg viewBox="0 0 1024 1024" className="home-icon02">
-                  <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
-                </svg>
-              </div>
-            </div>
-            <div className="home-links-container1">
-              <a href="#resources" className="home-link04 anchor">
-                Resources
-              </a>
-              <span className="home-link05 anchor">Inspiration</span>
-              <a href="#process" className="home-link06 anchor">
-                Process
-              </a>
-              <span className="home-link07 anchor">Our story</span>
             </div>
           </div>
         </div>
@@ -250,7 +219,7 @@ const Home = (props) => {
             href="https://open.spotify.com/album/2MybIcQlbTG7wowDJLTYDN?si=97yO3qBGRjiNd2m8Ktthlg"
             target="_blank"
             rel="noreferrer noopener"
-            className="home-link08"
+            className="home-link4"
           >
             <div className="home-team-card">
               <span className="home-name card-Heading">
@@ -263,7 +232,7 @@ const Home = (props) => {
             href="https://open.spotify.com/track/1AyFbnFkMbtaJwPmmu5m1k?si=991a090b61c64ca7"
             target="_blank"
             rel="noreferrer noopener"
-            className="home-link09"
+            className="home-link5"
           >
             <div className="home-team-card1">
               <span className="home-name1 card-Heading">Me and You</span>
@@ -274,7 +243,7 @@ const Home = (props) => {
             href="https://open.spotify.com/album/5sennetLWUcqhwXRo0dDzx?si=kPOEKFO9RquQJTOk5YcDdw"
             target="_blank"
             rel="noreferrer noopener"
-            className="home-link10"
+            className="home-link6"
           >
             <div className="home-team-card2">
               <span className="home-name2 card-Heading">River of Life</span>
@@ -285,34 +254,46 @@ const Home = (props) => {
       </div>
       <div className="home-section-separator1"></div>
       <div id="contact" className="home-get-in-touch">
-        <h2 className="home-text60 section-Heading">Get in touch</h2>
         <div className="home-content-container1">
-          <svg viewBox="0 0 1024 1024" className="home-icon04">
-            <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
-          </svg>
-          <a
-            href="mailto:robert@rochadrums.com?subject=rochadrums request"
-            className="home-text61 section-Text"
-          >
-            <span>robert@rochadrums.com</span>
-          </a>
-          <svg viewBox="0 0 877.7142857142857 1024" className="home-icon06">
-            <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
-          </svg>
-          <a
-            href="https://www.instagram.com/rochadrums/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="home-text63 section-Text"
-          >
-            <span>rochadrums</span>
-          </a>
-          <svg viewBox="0 0 1024 1024" className="home-icon08">
-            <path d="M938.667 426.667c0-117.803-47.787-224.555-124.971-301.696s-183.893-124.971-301.696-124.971-224.555 47.787-301.696 124.971-124.971 183.893-124.971 301.696c0 24.277 2.261 48.128 6.4 71.509 11.691 66.048 38.357 128.171 71.765 184.32 116.565 195.883 324.821 334.336 324.821 334.336 14.123 9.259 32.64 9.771 47.317 0 0 0 208.299-138.453 324.821-334.336 33.408-56.149 60.075-118.272 71.765-184.32 4.181-23.381 6.443-47.232 6.443-71.509zM853.333 426.667c0 18.944-1.749 37.845-5.077 56.661-9.429 53.333-31.445 105.728-61.099 155.563-83.285 139.947-220.416 249.643-275.157 290.091-54.784-40.448-191.872-150.144-275.157-290.091-29.653-49.835-51.669-102.229-61.099-155.563-3.328-18.816-5.077-37.717-5.077-56.661 0-94.251 38.144-179.541 99.968-241.365s147.115-99.968 241.365-99.968 179.541 38.144 241.365 99.968 99.968 147.115 99.968 241.365zM682.667 426.667c0-47.104-19.157-89.856-50.005-120.661s-73.557-50.005-120.661-50.005-89.856 19.157-120.661 50.005-50.005 73.557-50.005 120.661 19.157 89.856 50.005 120.661 73.557 50.005 120.661 50.005 89.856-19.157 120.661-50.005 50.005-73.557 50.005-120.661zM597.333 426.667c0 23.595-9.515 44.843-25.003 60.331s-36.736 25.003-60.331 25.003-44.843-9.515-60.331-25.003-25.003-36.736-25.003-60.331 9.515-44.843 25.003-60.331 36.736-25.003 60.331-25.003 44.843 9.515 60.331 25.003 25.003 36.736 25.003 60.331z"></path>
-          </svg>
-          <span className="home-text65 section-Text">
-            <span>Phoenix, AZ</span>
-          </span>
+          <div className="home-hero-text1">
+            <h1 className="home-heading1 section-Heading">
+              <span>Get In Touch</span>
+            </h1>
+            <div className="home-content-container2">
+              <svg viewBox="0 0 1024 1024" className="home-icon">
+                <path d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"></path>
+              </svg>
+              <a
+                href="mailto:robert@rochadrums.com?subject=rochadrums request"
+                className="home-text61 section-Text"
+              >
+                <span>robert@rochadrums.com</span>
+              </a>
+              <svg viewBox="0 0 877.7142857142857 1024" className="home-icon2">
+                <path d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"></path>
+              </svg>
+              <a
+                href="https://www.instagram.com/rochadrums/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="home-text63 section-Text"
+              >
+                <span>rochadrums</span>
+              </a>
+              <svg viewBox="0 0 1024 1024" className="home-icon4">
+                <path d="M938.667 426.667c0-117.803-47.787-224.555-124.971-301.696s-183.893-124.971-301.696-124.971-224.555 47.787-301.696 124.971-124.971 183.893-124.971 301.696c0 24.277 2.261 48.128 6.4 71.509 11.691 66.048 38.357 128.171 71.765 184.32 116.565 195.883 324.821 334.336 324.821 334.336 14.123 9.259 32.64 9.771 47.317 0 0 0 208.299-138.453 324.821-334.336 33.408-56.149 60.075-118.272 71.765-184.32 4.181-23.381 6.443-47.232 6.443-71.509zM853.333 426.667c0 18.944-1.749 37.845-5.077 56.661-9.429 53.333-31.445 105.728-61.099 155.563-83.285 139.947-220.416 249.643-275.157 290.091-54.784-40.448-191.872-150.144-275.157-290.091-29.653-49.835-51.669-102.229-61.099-155.563-3.328-18.816-5.077-37.717-5.077-56.661 0-94.251 38.144-179.541 99.968-241.365s147.115-99.968 241.365-99.968 179.541 38.144 241.365 99.968 99.968 147.115 99.968 241.365zM682.667 426.667c0-47.104-19.157-89.856-50.005-120.661s-73.557-50.005-120.661-50.005-89.856 19.157-120.661 50.005-50.005 73.557-50.005 120.661 19.157 89.856 50.005 120.661 73.557 50.005 120.661 50.005 89.856-19.157 120.661-50.005 50.005-73.557 50.005-120.661zM597.333 426.667c0 23.595-9.515 44.843-25.003 60.331s-36.736 25.003-60.331 25.003-44.843-9.515-60.331-25.003-25.003-36.736-25.003-60.331 9.515-44.843 25.003-60.331 36.736-25.003 60.331-25.003 44.843 9.515 60.331 25.003 25.003 36.736 25.003 60.331z"></path>
+              </svg>
+              <span className="home-text65 section-Text">
+                <span>Phoenix, AZ</span>
+              </span>
+            </div>
+            <a
+              href="mailto:robert@rochadrums.com?subject=rochadrums request"
+              className="home-cta-btn1 anchor button"
+            >
+              Contact
+            </a>
+          </div>
         </div>
       </div>
       <div className="home-section-separator2"></div>
@@ -320,7 +301,7 @@ const Home = (props) => {
         <div className="home-footer">
           <div className="home-social-links"></div>
           <div className="home-copyright-container">
-            <svg viewBox="0 0 1024 1024" className="home-icon10">
+            <svg viewBox="0 0 1024 1024" className="home-icon6">
               <path d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z"></path>
             </svg>
             <span className="anchor">
