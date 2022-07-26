@@ -124,8 +124,11 @@ const Home = (props) => {
               <span className="home-text25">Advanced:</span>
               <span>
                 {' '}
-                Contact Robert directly — advanced-level arrangements can be
-                made on a case-by-case basis, including online.
+                Robert is looking for a drumming partner at
+                a comparable skill level to bounce ideas off,
+                challenge each other, and talk nerdy about drums.
+                As a mutually-beneficial arrangement
+                this would be free of charge, if you are interested!
               </span>
               <br></br>
               <span></span>
@@ -139,7 +142,7 @@ const Home = (props) => {
                 />
               </span>
               <span>
-                $40/hour a la carte, or $80/month for weekly 1-hour lessons
+                $35/hour a la carte, or $70/month for weekly 1-hour lessons
               </span>
             </span>
           </div>
@@ -148,7 +151,7 @@ const Home = (props) => {
             <span className="home-text33 card-Text">
               <span>
                 Robert has over 10 years of experience in live performance,
-                including contemporary christian worship, jazz, and concert
+                including contemporary Christian worship, jazz, and concert
                 percussion. He plays to the music, locks down the rhythm
                 section, and loves collaborating with other musicians in real
                 time.
@@ -165,9 +168,16 @@ const Home = (props) => {
               <br></br>
               <span></span>
               <br></br>
+              <span className="home-text30">
+                Rates:
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
               <span>
-                Contact for rates - they are more-than-reasonable in exchange
-                for testimonials and a Great Time.
+                Variable, but a testimonial is always appreciated!
               </span>
             </span>
           </div>
@@ -201,9 +211,16 @@ const Home = (props) => {
               <br></br>
               <span></span>
               <br></br>
+              <span className="home-text30">
+                Rates:
+                <span
+                  dangerouslySetInnerHTML={{
+                    __html: ' ',
+                  }}
+                />
+              </span>
               <span>
-                Contact for rates - they are more-than-reasonable in exchange
-                for testimonials and a master of the final release.
+                A testimonial and a master of the final result.
               </span>
             </span>
           </div>
