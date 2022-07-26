@@ -80,7 +80,7 @@
   padding-bottom: var(--dl-space-space-tenunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("/playground_assets/20190202_065057020_ios%20%5Blarge%5D-1500w.jpg");
+  background-image: url("../20190202_065057020_iOS (Large).jpg");
 }
 .home-content-container {
   width: 100%;
@@ -356,7 +356,7 @@
   padding-bottom: var(--dl-space-space-fiveunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("/playground_assets/20211106_163058510_ios%20%5Blarge%5D-1500w.jpg");
+  background-image: url("src/20211106_163058510_iOS (Large).jpg");
 }
 .home-content-container1 {
   width: 100%;
