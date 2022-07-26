@@ -80,7 +80,7 @@
   padding-bottom: var(--dl-space-space-tenunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("../20190202_065057020_iOS (Large).jpg");
+  background-image: url("../../hero_landscape.jpg");
 }
 .home-content-container {
   width: 100%;
@@ -356,7 +356,7 @@
   padding-bottom: var(--dl-space-space-fiveunits);
   background-size: cover;
   justify-content: center;
-  background-image: url("src/20211106_163058510_iOS (Large).jpg");
+  background-image: url("../../hero_portrait.jpg");
 }
 .home-content-container1 {
   width: 100%;
