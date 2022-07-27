@@ -253,7 +253,7 @@ const Home = (props) => {
           >
             <div className="home-team-card1">
               <span className="home-name1 card-Heading">One Day Closer to You</span>
-              <span className="home-position1 card-Text">Anna Phillipe</span>
+              <span className="home-position1 card-Text">Anna Philippe</span>
             </div>
           </a>
           <a
