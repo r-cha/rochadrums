@@ -252,12 +252,12 @@ const Home = (props) => {
             className="home-link5"
           >
             <div className="home-team-card1">
-              <span className="home-name1 card-Heading">Me and You</span>
+              <span className="home-name1 card-Heading">One Day Closer to You</span>
               <span className="home-position1 card-Text">Anna Phillipe</span>
             </div>
           </a>
           <a
-            href="https://open.spotify.com/album/5sennetLWUcqhwXRo0dDzx?si=kPOEKFO9RquQJTOk5YcDdw"
+            href="https://open.spotify.com/track/6es8La47ZnWxLTLvXyoNox?si=33eee988f9fa4b39"
             target="_blank"
             rel="noreferrer noopener"
             className="home-link6"
