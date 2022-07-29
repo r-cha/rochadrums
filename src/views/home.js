@@ -254,7 +254,7 @@ const Home = (props) => {
             artist="Anna Philippe">
           </ PortfolioCard>
           <PortfolioCard
-            link="https://open.spotify.com/track/6es8La47ZnWxLTLvXyoNox?si=33eee988f9fa4b39"
+            link="https://open.spotify.com/album/5sennetLWUcqhwXRo0dDzx?si=xdWVZ2C-Qnybbalr22Yclg"
             title="River of Life"
             artist="Emma Terlizzi">
           </ PortfolioCard>
