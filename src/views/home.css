@@ -197,7 +197,7 @@
   width: auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
 }
 .home-portfolio-card-link {

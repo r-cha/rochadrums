@@ -243,21 +243,15 @@ const Home = (props) => {
           <h1 className="home-section-heading section-Heading">Music</h1>
         </div>
         <div className="home-portfolio-container">
-          <PortfolioCard
-            link="https://open.spotify.com/album/2MybIcQlbTG7wowDJLTYDN?si=97yO3qBGRjiNd2m8Ktthlg"
-            title="It's Always Been You"
-            artist="Antioch Phoenix">
-          </ PortfolioCard>
-          <PortfolioCard
-            link="https://open.spotify.com/track/1AyFbnFkMbtaJwPmmu5m1k?si=991a090b61c64ca7"
-            title="One Day Closer to You"
-            artist="Anna Philippe">
-          </ PortfolioCard>
-          <PortfolioCard
-            link="https://open.spotify.com/album/5sennetLWUcqhwXRo0dDzx?si=xdWVZ2C-Qnybbalr22Yclg"
-            title="River of Life"
-            artist="Emma Terlizzi">
-          </ PortfolioCard>
+          <div className="home-portfolio-card">
+            <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F46IsQhIw2JAJKgGY9Z2Mce&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+          </div>
+          <div className="home-portfolio-card">
+            <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F1AyFbnFkMbtaJwPmmu5m1k&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+          </div>
+          <div className="home-portfolio-card">
+            <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fs%2F5sennetLWUcqhwXRo0dDzx&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+          </div>
         </div>
       </div>
       <div className="home-section-separator"></div>
