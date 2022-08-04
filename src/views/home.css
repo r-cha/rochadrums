@@ -161,6 +161,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--dl-color-gray-900);
+  box-shadow: 5px 5px 10px 0px #000;
 }
 .home-service-card-heading {
   text-align: center;
