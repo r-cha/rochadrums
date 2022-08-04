@@ -43,6 +43,7 @@
   display: flex;
   align-items: space-between;
   flex-direction: column;
+  color: var(--dl-color-gray-white)
 }
 .home-right-side {
   display: flex;
