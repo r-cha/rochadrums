@@ -12,11 +12,11 @@
   display: flex;
   z-index: 100;
   position: sticky;
-  box-shadow: 5px 5px 10px 0px #b9b9b9;
+  box-shadow: 5px 5px 10px 0px #000;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-300);
 }
 .home-navbar {
   width: 100%;
@@ -94,6 +94,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  color: var(--dl-color-gray-black)
 }
 .home-heading {
   text-align: center;
@@ -162,6 +163,7 @@
 }
 .home-service-card-heading {
   text-align: center;
+  color: var(--dl-color-gray-black);
   margin-bottom: var(--dl-space-space-fourunits);
 }
 .home-service-card-text {
@@ -178,7 +180,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  background-color: var(--dl-color-gray-900);
+  background-color: var(--dl-color-gray-500);
 }
 .home-portfolio {
   width: 100%;
@@ -222,6 +224,7 @@
   display: flex;
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
+  margin-bottom: var(--dl-space-space-fiveunits);
   min-height: 800px;
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);
@@ -258,7 +261,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--dl-color-gray-white);
+  background-color: var(--dl-color-gray-300);
 }
 .home-footer {
   width: 100%;
@@ -272,16 +275,17 @@
   padding-bottom: var(--dl-space-space-tripleunit);
   justify-content: space-between;
 }
-.home-social-links {
+/* .home-social-links {
   border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   align-items: flex-start;
   flex-direction: row;
-}
+} */
 .home-copyright-container {
   display: flex;
   align-items: center;
   flex-direction: row;
+  color: var(--dl-color-gray-black);
 }
 .home-copyright-icon {
   width: 24px;
@@ -318,7 +322,7 @@
     justify-content: center;
   }
   .home-service-card {
-    width: 65%;
+    width: 80%;
     margin-bottom: var(--dl-space-space-fourunits);
   }
   .home-heading-container1 {
