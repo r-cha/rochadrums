@@ -47,7 +47,7 @@ const Home = (props) => {
         <div className="home-navbar">
           <div className="home-left-side">
             <div className="home-container1">
-              <h1>rochadrums</h1>
+              <h1>rochadrums🥁</h1>
             </div>
           </div>
           <div className="home-right-side">
@@ -74,12 +74,7 @@ const Home = (props) => {
             <h1 className="home-heading section-Heading">
               <span className="home-head-emphasis">Ro</span>
               <span>
-                bert
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: ' ',
-                  }}
-                />
+                bert{' '}
               </span>
               <span className="home-head-emphasis">Cha</span>
               <span>ndler</span>
