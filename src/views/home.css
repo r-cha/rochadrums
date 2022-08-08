@@ -198,7 +198,7 @@
   padding-bottom: var(--dl-space-space-fiveunits);
 }
 .home-portfolio-container {
-  width: auto;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

@@ -1,6 +1,8 @@
 import React from 'react'
 
 import { Helmet } from 'react-helmet'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 import './home.css'
 
@@ -238,7 +240,36 @@ const Home = (props) => {
           <h1 className="home-section-heading section-Heading">Music</h1>
         </div>
         <div className="home-portfolio-container">
-          <div className="home-portfolio-card">
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#191919', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  #191919' }}
+              date="2022"
+              iconStyle={{ background: '#595959', color: '#fff' }}
+            >
+              <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F46IsQhIw2JAJKgGY9Z2Mce&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#191919', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  #191919' }}
+              date="2020"
+              iconStyle={{ background: '#595959', color: '#fff' }}
+            >
+              <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F1AyFbnFkMbtaJwPmmu5m1k&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#191919', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  #191919' }}
+              date="2019"
+              iconStyle={{ background: '#595959', color: '#fff' }}
+            >
+              <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fs%2F5sennetLWUcqhwXRo0dDzx&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+            </VerticalTimelineElement>
+          </VerticalTimeline>
+          {/* <div className="home-portfolio-card">
             <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F46IsQhIw2JAJKgGY9Z2Mce&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
           </div>
           <div className="home-portfolio-card">
@@ -246,7 +277,7 @@ const Home = (props) => {
           </div>
           <div className="home-portfolio-card">
             <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Falbum.link%2Fs%2F5sennetLWUcqhwXRo0dDzx&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="home-section-separator"></div>
