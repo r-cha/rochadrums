@@ -158,7 +158,7 @@ const Home = (props) => {
               </span>
               <span>
                 {' '}
-                $35/hour a la carte, or $70/month for weekly 1-hour lessons
+                First lesson is free, then we can discuss your needs from there!
               </span>
             </span>
           </div>
