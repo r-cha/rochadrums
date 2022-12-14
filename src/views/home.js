@@ -248,6 +248,15 @@ const Home = (props) => {
               date="2022"
               iconStyle={{ background: '#595959', color: '#fff' }}
             >
+              <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F1DmRuVzeZlUEqiVk15SbTA&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              contentStyle={{ background: '#191919', color: '#fff' }}
+              contentArrowStyle={{ borderRight: '7px solid  #191919' }}
+              date="2022"
+              iconStyle={{ background: '#595959', color: '#fff' }}
+            >
               <iframe width="100%" height="150" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F46IsQhIw2JAJKgGY9Z2Mce&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
             </VerticalTimelineElement>
             <VerticalTimelineElement
