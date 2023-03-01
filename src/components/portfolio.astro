@@ -11,8 +11,8 @@ const sites = await getPortfolio();
     Check out this music with Robert on drums.
   </Fragment>
   <div class="max-w-6xl space-y-2">
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-      {sites.map((site) => <PortfolioCard site={site} />)}
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3">
+      {sites.reverse().map((site) => <PortfolioCard site={site} />)}
     </div>
     <p class="text-right text-sm text-primary">
         and more coming soon...
