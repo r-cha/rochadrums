@@ -23,7 +23,7 @@ module.exports = {
           500: "#1f4c94",
           600: "#143161",
           800: "#09172d",
-        }
+        },
       },
       textColor: {
         default: "var(--color-text)",

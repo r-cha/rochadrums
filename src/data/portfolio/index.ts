@@ -3,10 +3,13 @@
 import type { PortfolioLink } from "~/types";
 import sitesData from "./sites.json";
 
-const allImages = import.meta.glob<ImageMetadata>("./images/*.{png,jpg,jpeg,webp}", {
-  eager: true,
-  import: "default",
-});
+const allImages = import.meta.glob<ImageMetadata>(
+  "./images/*.{png,jpg,jpeg,webp}",
+  {
+    eager: true,
+    import: "default",
+  }
+);
 
 let _loadPortfolio: Promise<Array<PortfolioLink>>;
 
