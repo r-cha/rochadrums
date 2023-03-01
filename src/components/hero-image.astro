@@ -1,0 +1,15 @@
+---
+import { Picture } from "@astrojs/image/components";
+import rochaImage from "~/assets/hero_landscape.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
+---
+
+<Picture
+  class="object-cover w-full h-full"
+  src={rochaImage}
+  widths={widths}
+  sizes={sizes}
+  alt="Robert playing some drums"
+/>

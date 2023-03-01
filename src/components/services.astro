@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon";
+import ContentSection from "~/components/content-section.astro";
+import type { ServiceItem } from "~/types";
+
+const services: Array<ServiceItem> = [
+  {
+    title: "Lessons",
+    description:
+      "Develop a personalized development plan with Robert to learn the basics, refine your skills, or exchange advanced ideas. Ages 3-73!",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "Live",
+    description:
+      "Lock down a rhythmicist you can count on. Collaborate with Robert anywhere in Phoenix for contemporary Christian worship, jazz, metalcore, or anything else.",
+    icon: "mdi:amplifier",
+  },
+  {
+    title: "Studio",
+    description:
+      "Get demo-quality drums within 48 hours, or work closely with Robert for full drum writing and performance on your single, EP, or album.",
+    icon: "mdi:microphone",
+  },
+];
+---
+
+<ContentSection title="Services" id="services">
+  <Fragment slot="lead">
+    Draw on Robert's experience to
+    <span class="text-primary">learn</span>,
+    <span class="text-primary">collaborate</span>, and
+    <span class="text-primary">excel</span> in your musical journey.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      services.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+  <span class="text-center">Rates are extremely flexible. Let's talk!</span>
+</ContentSection>
