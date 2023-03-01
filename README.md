@@ -6,7 +6,6 @@ A fork I guess
 
 > An Astro + Tailwind CSS example/template for landing pages.
 
-
 ## Commands
 
 | Command                | Action                                            |
