@@ -3,14 +3,14 @@ import ContentSection from "~/components/content-section.astro";
 import PortfolioCard from "~/components/portfolio-card.astro";
 import { getPortfolio } from "~/data/portfolio";
 
-const sites = await getPortfolio();
+const albums = await getPortfolio();
 ---
 
 <ContentSection title="Portfolio" id="portfolio">
   <Fragment slot="lead">Check out this music with Robert on drums.</Fragment>
   <div class="max-w-6xl space-y-2">
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3">
-      {sites.reverse().map((site) => <PortfolioCard site={site} />)}
+      {albums.map((album) => <PortfolioCard site={album} />)}
     </div>
     <p class="text-right text-primary text-sm">and more coming soon...</p>
   </div>
