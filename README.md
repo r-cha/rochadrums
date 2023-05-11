@@ -2,10 +2,6 @@
 
 [![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
-A fork I guess
-
-> An Astro + Tailwind CSS example/template for landing pages.
-
 ## Commands
 
 | Command                | Action                                            |

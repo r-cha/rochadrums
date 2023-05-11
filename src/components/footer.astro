@@ -1,7 +1,11 @@
 ---
 import { Icon } from "astro-icon";
-import HeroImage from "~/components/hero-image.astro";
 import type { FooterLink } from "~/types";
+import { Picture } from "@astrojs/image/components";
+import hero from "~/assets/hero_landscape.jpg";
+
+const widths = [450, 800, 1200];
+const sizes = "100vw";
 
 const links: Array<FooterLink> = [
   {
@@ -18,27 +22,38 @@ const links: Array<FooterLink> = [
     url: "https://goo.gl/maps/z99FMN7Sd8sMS4y26",
     description: "phoenix, az",
     icon: "mdi:map-marker",
-  },
+  }, // TODO: replace with a link to concerto?
 ];
 ---
 
-<footer class="relative flex h-64 items-center justify-center">
+<footer id="contact" class="relative flex h-64 items-center justify-center">
   <div class="absolute inset-0 overflow-hidden opacity-40">
-    <HeroImage />
+    <Picture
+      class="object-cover w-full h-full"
+      src={hero}
+      widths={widths}
+      sizes={sizes}
+      alt="Robert playing some drums"
+    />
   </div>
-  <ul class="relative grid grid-cols-3 gap-4 sm:grid-cols-3">
-    {
-      links.map((link) => (
-        <li>
-          <a
-            class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
-            href={link.url}
-          >
-            <span class="sr-only">{link.description}</span>
-            <Icon class="h-full" name={link.icon} />
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+  <div>
+    <ul class="relative grid grid-cols-3 gap-4 sm:grid-cols-3">
+      {
+        links.map((link) => (
+          <li>
+            <a
+              class="flex h-16 w-16 items-center justify-center rounded-full border-2 border-current p-4"
+              href={link.url}
+            >
+              <span class="sr-only">{link.description}</span>
+              <Icon class="h-full" name={link.icon} />
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <div class="my-4 text-center font-bold text-white text-xl">
+      Get in touch
+    </div>
+  </div>
 </footer>
