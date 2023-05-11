@@ -1,0 +1,21 @@
+---
+import { Icon } from "astro-icon";
+
+import type { ServiceItem } from "~/types";
+
+export interface Props {
+  serviceItem: ServiceItem;
+}
+
+const { serviceItem } = Astro.props;
+---
+
+<li
+  class="flex flex-col items-center aspect-auto md:aspect-square gap-4 border border-default bg-offset p-6"
+>
+  <div class="h-16 w-16 rounded-full border-2 border-current p-3">
+    <Icon name={serviceItem.icon} />
+  </div>
+  <p class="text-center font-extrabold text-xl">{serviceItem.title}</p>
+  <p class="text-center text-offset text-sm">{serviceItem.description}</p>
+</li>

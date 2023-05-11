@@ -1,12 +1,9 @@
 ---
 import "@fontsource/inter/variable.css";
-import Services from "~/components/services.astro";
 import Footer from "~/components/footer.astro";
-import Header from "~/components/header.astro";
-import Intro from "~/components/intro.astro";
-import Portfolio from "~/components/portfolio.astro";
-import Splash from "~/components/splash.astro";
+import Hero from "~/components/hero.astro";
 import "~/styles/index.css";
+import Content from "~/components/content.astro";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -19,7 +16,10 @@ const description =
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={generator} />
 
     <title>rochadrums</title>
@@ -60,13 +60,8 @@ const description =
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
   >
-    <Header />
-    <Splash />
-    <div class="space-y-24 px-8 py-32">
-      <Intro />
-      <Services />
-      <Portfolio />
-    </div>
+    <Hero />
+    <Content />
     <Footer />
   </body>
 </html>
