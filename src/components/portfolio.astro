@@ -9,7 +9,7 @@ const albums = await getPortfolio();
 <ContentSection title="" id="music">
   <Fragment slot="lead"></Fragment>
   <div class="max-w-6xl">
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
       {albums.map((album) => <PortfolioCard site={album} />)}
     </div>
   </div>

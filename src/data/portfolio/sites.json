@@ -1,5 +1,10 @@
 [
   {
+    "title": "Glorious Hero",
+    "image": "./images/gh.webp",
+    "url": "https://song.link/s/6FqTU51gAbmlOKYB5DMLYs"
+  },
+  {
     "title": "Lovesick People",
     "image": "./images/lovesick.webp",
     "url": "https://album.link/i/1683935923"
@@ -28,5 +33,10 @@
     "title": "River of Life",
     "image": "./images/rol.webp",
     "url": "https://album.link/s/5sennetLWUcqhwXRo0dDzx"
+  },
+  {
+    "title": "Contact Me",
+    "image": "./images/wip.png",
+    "url": "mailto:robert@rochadrums.com?subject=rochadrums request"
   }
 ]
