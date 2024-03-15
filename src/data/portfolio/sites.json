@@ -1,7 +1,12 @@
 [
   {
+    "title": "Single Day",
+    "image": "./images/sd.jpeg",
+    "url": "https://song.link/s/6VHB0rLakdj3Vu3b0XmPyx"
+  },
+  {
     "title": "Glorious Hero",
-    "image": "./images/gh.webp",
+    "image": "./images/gh.jpeg",
     "url": "https://song.link/s/6FqTU51gAbmlOKYB5DMLYs"
   },
   {
@@ -33,10 +38,6 @@
     "title": "River of Life",
     "image": "./images/rol.webp",
     "url": "https://album.link/s/5sennetLWUcqhwXRo0dDzx"
-  },
-  {
-    "title": "Contact Me",
-    "image": "./images/wip.png",
-    "url": "mailto:robert@rochadrums.com?subject=rochadrums request"
   }
 ]
+
