@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon";
 import type { FooterLink } from "~/types";
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import hero from "~/assets/hero_landscape.jpg";
 
 const widths = [450, 800, 1200];
@@ -28,12 +28,11 @@ const links: Array<FooterLink> = [
 
 <footer id="contact" class="relative flex h-64 items-center justify-center">
   <div class="absolute inset-0 overflow-hidden opacity-40">
-    <Picture
+    <Image
       class="object-cover w-full h-full"
       src={hero}
-      widths={widths}
-      sizes={sizes}
       alt="Robert playing some drums"
+      widths={widths}
     />
   </div>
   <div>
