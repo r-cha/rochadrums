@@ -8,16 +8,14 @@ const albums = await getPortfolio();
 
 <ContentSection title="" id="music">
   <Fragment slot="lead"></Fragment>
-  <div class="max-w-6xl">
-    <div class="md:grid md:grid-cols-3 md:gap-4">
-      <!-- First 6 albums in 2-column grid on mobile, part of 3-column grid on md+ -->
-      <div class="grid grid-cols-2 gap-4 md:contents">
-        {albums.slice(0, 6).map((album) => <PortfolioCard site={album} />)}
-      </div>
-      <!-- Last 3 albums in 3-column grid on mobile, part of 3-column grid on md+ -->
-      <div class="mt-4 grid grid-cols-3 gap-4 md:contents">
-        {albums.slice(6).map((album) => <PortfolioCard site={album} />)}
-      </div>
+  <div class="max-w-6xl space-y-4">
+    <!-- First 6 albums: 2 rows of 3 -->
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
+      {albums.slice(0, 6).map((album) => <PortfolioCard site={album} />)}
+    </div>
+    <!-- Last 4 albums: 1 row of 4 -->
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+      {albums.slice(6).map((album) => <PortfolioCard site={album} />)}
     </div>
   </div>
 </ContentSection>
