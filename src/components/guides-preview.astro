@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+
+const guides = (await getCollection("guides")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+
+const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
+---
+
+<div id="guides" class="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2">
+  {
+    guides.map((guide) => (
+      <article class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+        <p class="text-center font-extrabold text-xl">{guide.data.title}</p>
+        <p class="text-center text-offset text-sm">{guide.data.description}</p>
+        <a class="inline-flex font-semibold text-secondary" href={`/guides/${getGuidePath(guide.id)}/`}>
+          Read guide
+        </a>
+      </article>
+    ))
+  }
+</div>

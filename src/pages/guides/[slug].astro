@@ -1,0 +1,46 @@
+---
+import "@fontsource/inter/variable.css";
+import { getCollection, render } from "astro:content";
+import Footer from "~/components/footer.astro";
+import "~/styles/index.css";
+
+export async function getStaticPaths() {
+  const guides = await getCollection("guides");
+  const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
+
+  return guides.map((guide) => ({
+    params: {
+      slug: getGuidePath(guide.id),
+    },
+    props: {
+      guide,
+    },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-full motion-safe:scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{guide.data.title} | rochadrums</title>
+    <meta name="description" content={guide.data.description} />
+  </head>
+  <body
+    class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
+  >
+    <main class="mx-auto max-w-3xl px-8 py-20">
+      <a class="font-semibold text-secondary" href="/guides/">← Back to guides</a>
+      <h1 class="mt-6 font-bold tracking-tight text-4xl">{guide.data.title}</h1>
+      <p class="mt-4 text-lg text-offset">{guide.data.description}</p>
+      <article class="guide-content mt-10">
+        <Content />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

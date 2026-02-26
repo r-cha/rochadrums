@@ -10,3 +10,19 @@ a,
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-fill-300 via-bar-600 to-bar-400;
 }
+
+.guide-content {
+  @apply text-lg leading-8 text-default;
+}
+
+.guide-content h2 {
+  @apply mt-8 font-bold text-2xl;
+}
+
+.guide-content p {
+  @apply mt-4 text-offset;
+}
+
+.guide-content ul {
+  @apply mt-4 list-disc space-y-2 pl-6;
+}
