@@ -4,6 +4,11 @@ import { getCollection } from "astro:content";
 import Footer from "~/components/footer.astro";
 import "~/styles/index.css";
 
+const { generator, site } = Astro;
+const description =
+  "Practical drumming guides from Robert Chandler, including beginner setup and gear recommendations.";
+const canonical = new URL("/guides/", site);
+
 const guides = (await getCollection("guides")).sort(
   (a, b) => a.data.order - b.data.order,
 );
@@ -16,10 +21,42 @@ const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={generator} />
+    <link rel="canonical" href={canonical} />
     <title>Drum Guides | rochadrums</title>
-    <meta
-      name="description"
-      content="Practical drumming guides from Robert Chandler, including beginner setup and gear recommendations."
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Drum Guides | rochadrums" />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Drum Guides | rochadrums" />
+    <meta name="twitter:description" content={description} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Drum Guides",
+        "description": description,
+        "url": String(canonical),
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "rochadrums",
+          "url": site,
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "itemListElement": guides.map((guide, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "url": new URL(`/guides/${getGuidePath(guide.id)}/`, site),
+            "name": guide.data.title,
+          })),
+        },
+      })}
     />
   </head>
   <body

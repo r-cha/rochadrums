@@ -4,6 +4,8 @@ import { getCollection, render } from "astro:content";
 import Footer from "~/components/footer.astro";
 import "~/styles/index.css";
 
+const { generator, site } = Astro;
+
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
   const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
@@ -20,6 +22,8 @@ export async function getStaticPaths() {
 
 const { guide } = Astro.props;
 const { Content } = await render(guide);
+const canonical = new URL(`/guides/${Astro.params.slug}/`, site);
+const title = `${guide.data.title} | rochadrums`;
 ---
 
 <!DOCTYPE html>
@@ -27,8 +31,74 @@ const { Content } = await render(guide);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{guide.data.title} | rochadrums</title>
+    <meta name="generator" content={generator} />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
     <meta name="description" content={guide.data.description} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={guide.data.description} />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={guide.data.description} />
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": guide.data.title,
+            "description": guide.data.description,
+            "datePublished": guide.data.publishDate,
+            "dateModified": guide.data.publishDate,
+            "author": {
+              "@type": "Person",
+              "name": "Robert Chandler",
+              "url": site,
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Robert Chandler",
+              "url": site,
+            },
+            "mainEntityOfPage": String(canonical),
+            "url": String(canonical),
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@type": "CollectionPage",
+              "name": "Drum Guides",
+              "url": new URL("/guides/", site),
+            },
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": site,
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Guides",
+                "item": new URL("/guides/", site),
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": guide.data.title,
+                "item": String(canonical),
+              },
+            ],
+          },
+        ],
+      })}
+    />
   </head>
   <body
     class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white"
