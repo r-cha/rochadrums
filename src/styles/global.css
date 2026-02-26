@@ -16,13 +16,21 @@ a,
 }
 
 .guide-content h2 {
-  @apply mt-8 font-bold text-2xl;
+  @apply mt-10 mb-4 font-bold text-2xl text-default;
+}
+
+.guide-content h3 {
+  @apply mt-8 mb-3 font-semibold text-xl text-default;
+}
+
+.guide-content h4 {
+  @apply mt-6 mb-2 font-semibold text-lg text-gray-200;
 }
 
 .guide-content p {
-  @apply mt-4 text-offset;
+  @apply mt-4 text-gray-200;
 }
 
 .guide-content ul {
-  @apply mt-4 list-disc space-y-2 pl-6;
+  @apply mt-4 list-disc space-y-2 pl-6 text-gray-200;
 }
