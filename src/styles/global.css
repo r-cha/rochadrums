@@ -24,13 +24,18 @@ a,
 }
 
 .guide-content h4 {
-  @apply mt-6 mb-2 font-semibold text-lg text-gray-200;
+  @apply mt-6 mb-2 font-semibold text-default text-lg;
 }
 
 .guide-content p {
-  @apply mt-4 text-gray-200;
+  @apply mt-4 text-default;
 }
 
 .guide-content ul {
-  @apply mt-4 list-disc space-y-2 pl-6 text-gray-200;
+  @apply mt-4 list-disc space-y-2 pl-6 text-default;
+}
+
+.guide-content a {
+  @apply text-offset underline decoration-current underline-offset-4;
+  @apply hover:text-secondary;
 }

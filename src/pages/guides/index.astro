@@ -66,7 +66,7 @@ const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
     <Header />
     <main class="mx-auto max-w-4xl px-8 py-20">
       <h1 class="font-bold tracking-tight text-4xl">Drum Guides</h1>
-      <p class="mt-4 max-w-2xl text-lg text-offset">
+      <p class="mt-4 max-w-2xl text-lg text-default">
         Tutorials, recommendations, and practical notes from my real playing and session workflow.
       </p>
 
@@ -75,7 +75,7 @@ const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
           guides.map((guide) => (
             <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
               <h2 class="text-center font-extrabold text-xl">{guide.data.title}</h2>
-              <p class="text-center text-offset text-sm">{guide.data.description}</p>
+              <p class="text-center text-default text-sm">{guide.data.description}</p>
               <a class="inline-flex font-semibold text-secondary" href={`/guides/${getGuidePath(guide.id)}/`}>
                 Read guide
               </a>

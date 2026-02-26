@@ -12,7 +12,7 @@ It can be overwhelming to see all the hardware of a drum kit laid out and not kn
 Here's the good news: the best place to start is with whatever you already have.
 As you get into a regular rhythm of practicing, you can expand your gear gradually, so you can save money and make sure drums are right for you before diving into the deep end!
 
-As you start your drumming journey, start simple, commit to short daily sessions, and only upgrade gear after consistency is established.
+As you start your drumming journey: start simple, commit to short daily sessions, and only upgrade gear after consistency is established.
 
 ## Gear
 
@@ -35,9 +35,11 @@ You can start practicing your technique right away:
 - Let your elbows hang naturally.
 - Rotate from the wrist, not the elbow.
 
+<!-- Diagram of proper posture -->
+
 #### Free Metronome
 
-Now, it's not just about muscles, but also timing: simply Google "Metronome" and one will appear right there at the top of the results. For a few more features (still free!), try out some of the first few results you see below that metronome.
+Now, it's not just about muscles, but also timing: simply [Google "Metronome" and one will appear](https://share.google/QOXF1ol7T70RrLSHw) right there at the top of the results.
 
 For your first exercise, put the metronome at 80 BPM.
 Hit the pillow in time with the beat - start with 8 in a row on each hand, swapping back and forth.
@@ -55,6 +57,8 @@ Controlling rebound is, really, the secret to all drumming, so don't be discoura
 It's slightly different on all drums and practice pads, so you'll learn over the years how to refine your touch based on your playing surface.
 
 With a real practice pad under your sticks, pay even more attention to your technique: your sticks should meet the surface at about 10 degrees down, so move your seat height and pad height appropriately.
+
+<!-- Diagram of stick position on head -->
 
 #### Dedicated Metronome
 
@@ -111,7 +115,7 @@ If you don't know how to read music, now's the time to learn!
 
 In-person, one-on-one lessons are the best way to learn **any** instrument or skill.
 If you're in Phoenix, AZ, I can be your teacher!
-However, there is also a wealth of knowledge from the best drummers of our time available for free on the internet.
+However, there is also a wealth of knowledge from the best drummers of our time available on the internet.
 I love [MikesLessons.com](https://www.mikeslessons.com/) (from Mike Johnston) or [Drumeo](https://www.drumeo.com/); both have free content on YouTube and additional paid content on their sites (Method or Foundations learning tracks are a good place to start).
 [Stephen's Drum Shed](https://www.stephensdrumshed.com/) has great beginner content: how to practice, technique, and basic coordination.
 
