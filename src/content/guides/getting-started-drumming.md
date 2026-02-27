@@ -92,7 +92,7 @@ My first cymbals were Zildjian ZBT's, and the modern equivalent would be the Zil
 #### Hardware
 
 I encourage you once more to search for quality in your drum hardware.
-Double-braced stands are a **must** for stability while playing and longevity if you have to move them around a lot.
+Double-braced stands are a **must** for stability while playing and durability if you need to move your kit often.
 There are a lot of options here; look at reviews if you're in doubt or overwhelmed.
 
 With all that acquired, you're ready to jam out!
@@ -109,13 +109,15 @@ Print them out and keep them on hand wherever you practice!
 This is the bible of drumming.
 You can find it here: [Stick Control by George Lawrence Stone](https://www.stonepercussionbooks.com/stick-control.html).
 If you buy only one book in your first year of drumming, let it be this.
-If you don't know how to read music, now's the time to learn!
 
-#### Online async lessons
+If you don't know how to read music notation, now's the time to learn!
+
+#### Drum Lessons
 
 In-person, one-on-one lessons are the best way to learn **any** instrument or skill.
 If you're in Phoenix, AZ, I can be your teacher!
-However, there is also a wealth of knowledge from the best drummers of our time available on the internet.
+
+There is also a wealth of knowledge from the best drummers of our time available on the internet.
 I love [MikesLessons.com](https://www.mikeslessons.com/) (from Mike Johnston) or [Drumeo](https://www.drumeo.com/); both have free content on YouTube and additional paid content on their sites (Method or Foundations learning tracks are a good place to start).
 [Stephen's Drum Shed](https://www.stephensdrumshed.com/) has great beginner content: how to practice, technique, and basic coordination.
 
