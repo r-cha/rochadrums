@@ -4,6 +4,7 @@ import Footer from "~/components/footer.astro";
 import Hero from "~/components/hero.astro";
 import "~/styles/index.css";
 import Content from "~/components/content.astro";
+import sitesData from "~/data/portfolio/sites.json";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -62,6 +63,7 @@ const description =
         },
         {
           "@type": "Person",
+          "@id": `${site}#person`,
           "name": "Robert Chandler",
           "url": site,
           "image": String(image),
@@ -100,7 +102,18 @@ const description =
               }
             }
           ]
-        }
+        },
+        ...sitesData.map((album) => ({
+          "@type": album.url.includes("album.link") ? "MusicAlbum" : "MusicRecording",
+          "name": album.title,
+          "url": album.url,
+          "byArtist": { "@type": "MusicGroup", "name": album.artist },
+          "contributor": {
+            "@type": "OrganizationRole",
+            "contributor": { "@id": `${site}#person` },
+            "roleName": "Drummer",
+          },
+        })),
       ]
     })} />
     

@@ -2,15 +2,16 @@
 export interface Props {
   id: string;
   title: string;
+  srOnly?: boolean;
 }
 
-const { title, id } = Astro.props;
+const { title, id, srOnly } = Astro.props;
 ---
 
 <section id={id} class="flex scroll-mt-24 flex-col items-center space-y-2">
   <div class="flex flex-col items-center gap-4">
     <slot name="eyebrow" />
-    <h2 class="text-center font-extrabold tracking-tight text-6xl">
+    <h2 class:list={["text-center font-extrabold tracking-tight text-6xl", { "sr-only": srOnly }]}>
       {title}
     </h2>
   </div>

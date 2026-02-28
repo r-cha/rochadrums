@@ -1,53 +1,62 @@
 [
   {
     "title": "There Is A River (Live)",
+    "artist": "Antioch Phoenix",
     "image": "./images/there-is-a-river.jpg",
     "url": "https://album.link/i/1863007567"
   },
   {
     "title": "Bless Your Name [Live]",
+    "artist": "Antioch Phoenix",
     "image": "./images/bless-your-name.jpg",
     "url": "https://song.link/i/1817178341"
   },
   {
     "title": "Presence",
+    "artist": "Antioch Phoenix",
     "image": "./images/pres.jpg",
     "url": "https://album.link/s/5E9rpJtN1o71ClqTgDTRbB"
   },
   {
     "title": "Glorious Hero",
+    "artist": "Brionna Consalvo",
     "image": "./images/gh.jpeg",
     "url": "https://song.link/s/6FqTU51gAbmlOKYB5DMLYs"
   },
   {
     "title": "Lovesick People",
+    "artist": "Eyes On Him",
     "image": "./images/lovesick.webp",
     "url": "https://album.link/i/1683935923"
   },
   {
     "title": "Maker of Heaven",
+    "artist": "Antioch Phoenix",
     "image": "./images/moh.webp",
     "url": "https://album.link/s/6TSsYHdf8KV179SVx6GgPj"
   },
   {
     "title": "at the altar",
+    "artist": "The Chandlers",
     "image": "./images/ata.webp",
     "url": "https://song.link/s/1DmRuVzeZlUEqiVk15SbTA"
   },
   {
     "title": "It's Always Been You (Live)",
+    "artist": "Antioch Phoenix",
     "image": "./images/aby.webp",
     "url": "https://song.link/s/46IsQhIw2JAJKgGY9Z2Mce"
   },
   {
     "title": "Me and You",
+    "artist": "Anna Philippe",
     "image": "./images/may.webp",
     "url": "https://song.link/s/1AyFbnFkMbtaJwPmmu5m1k"
   },
   {
     "title": "River of Life",
+    "artist": "Emma Terlizzi",
     "image": "./images/rol.webp",
     "url": "https://album.link/s/5sennetLWUcqhwXRo0dDzx"
   }
 ]
-
