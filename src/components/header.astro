@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import hero from "~/assets/hero_portrait.jpg";
+import type { NavItem } from "~/types";
+
+const navItems: Array<NavItem> = [
+  { title: "Services", url: "/#services" },
+  { title: "Guides", url: "/guides/" },
+  { title: "Music", url: "/#music" },
+  { title: "Contact", url: "/#contact" },
+];
+---
+
+<div class="relative isolate overflow-hidden bg-gray-900">
+  <Image
+    width={1080}
+    src={hero}
+    alt=""
+    loading="eager"
+    class="absolute inset-0 -z-10 h-full w-full object-cover object-top blur-[2px] brightness-50"
+  />
+  <nav
+    class="flex items-center justify-between p-6 lg:px-8"
+    aria-label="Global"
+  >
+    <div class="flex lg:flex-1">
+      <a href="/" class="-m-1.5 p-1.5">
+        <span class="font-extrabold text-white">rochadrums</span>
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      {
+        navItems.map(({ title, url }) => (
+          <a href={url} class="font-semibold leading-6 text-white text-sm">
+            {title}
+          </a>
+        ))
+      }
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+  </nav>
+</div>

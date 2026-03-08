@@ -10,3 +10,32 @@ a,
   @apply bg-clip-text text-transparent;
   @apply bg-gradient-to-br from-fill-300 via-bar-600 to-bar-400;
 }
+
+.guide-content {
+  @apply text-lg leading-8 text-default;
+}
+
+.guide-content h2 {
+  @apply mt-10 mb-4 font-bold text-2xl text-default;
+}
+
+.guide-content h3 {
+  @apply mt-8 mb-3 font-semibold text-xl text-default;
+}
+
+.guide-content h4 {
+  @apply mt-6 mb-2 font-semibold text-default text-lg;
+}
+
+.guide-content p {
+  @apply mt-4 text-default;
+}
+
+.guide-content ul {
+  @apply mt-4 list-disc space-y-2 pl-6 text-default;
+}
+
+.guide-content a {
+  @apply text-offset underline decoration-current underline-offset-4;
+  @apply hover:text-secondary;
+}

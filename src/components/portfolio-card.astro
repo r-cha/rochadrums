@@ -15,6 +15,7 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
 <a
   class="group aspect-square hover:!text-default"
   href={site.url}
+  rel="noopener noreferrer"
   aria-label={`Stream ${site.title}`}
 >
   <figure class="relative h-full w-full overflow-hidden">
@@ -24,11 +25,6 @@ const sizes = "(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw";
       widths={widths}
       alt={`Album art of ${site.title}`}
     />
-    <figcaption class="absolute inset-0">
-      <div
-        class="flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100"
-      >
-      </div>
-    </figcaption>
+    <figcaption class="sr-only">{site.title} by {site.artist}</figcaption>
   </figure>
 </a>

@@ -4,6 +4,7 @@ import Footer from "~/components/footer.astro";
 import Hero from "~/components/hero.astro";
 import "~/styles/index.css";
 import Content from "~/components/content.astro";
+import sitesData from "~/data/portfolio/sites.json";
 
 const { generator, site } = Astro;
 const image = new URL("social.jpg", site);
@@ -47,44 +48,72 @@ const description =
     <!-- structured data -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Robert Chandler",
-      "url": site,
-      "image": String(image),
-      "jobTitle": "Professional Drummer",
-      "description": description,
-      "knowsAbout": ["Drums", "Jazz", "Rock", "Contemporary Christian Worship", "Metalcore"],
-      "sameAs": [
-        "https://www.instagram.com/rochadrums/",
-        "https://www.youtube.com/@rocha-drums"
-      ],
-      "makesOffer": [
+      "@graph": [
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Drum Lessons",
-            "description": "Professional drum lessons at all skill levels",
-            "areaServed": "Phoenix, AZ"
-          }
+          "@type": "WebSite",
+          "name": "rochadrums",
+          "url": site,
+          "description": description,
+          "inLanguage": "en-US",
+          "hasPart": {
+            "@type": "CollectionPage",
+            "name": "Drum Guides",
+            "url": new URL("/guides/", site),
+          },
         },
         {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Remote Recording Sessions",
-            "description": "Remote demo recording sessions"
-          }
+          "@type": "Person",
+          "@id": `${site}#person`,
+          "name": "Robert Chandler",
+          "url": site,
+          "image": String(image),
+          "jobTitle": "Professional Drummer",
+          "description": description,
+          "knowsAbout": ["Drums", "Jazz", "Rock", "Contemporary Christian Worship", "Metalcore"],
+          "sameAs": [
+            "https://www.instagram.com/rochadrums/",
+            "https://www.youtube.com/@rocha-drums"
+          ],
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Drum Lessons",
+                "description": "Professional drum lessons at all skill levels",
+                "areaServed": "Phoenix, AZ"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Remote Recording Sessions",
+                "description": "Remote demo recording sessions"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Live Performance",
+                "description": "Live drumming performance for any context",
+                "areaServed": "Phoenix, AZ"
+              }
+            }
+          ]
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Live Performance",
-            "description": "Live drumming performance for any context",
-            "areaServed": "Phoenix, AZ"
-          }
-        }
+        ...sitesData.map((album) => ({
+          "@type": album.url.includes("album.link") ? "MusicAlbum" : "MusicRecording",
+          "name": album.title,
+          "url": album.url,
+          "byArtist": { "@type": "MusicGroup", "name": album.artist },
+          "contributor": {
+            "@type": "OrganizationRole",
+            "contributor": { "@id": `${site}#person` },
+            "roleName": "Drummer",
+          },
+        })),
       ]
     })} />
     

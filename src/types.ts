@@ -17,6 +17,7 @@ export interface NavItem {
 
 export interface PortfolioLink {
   title: string;
+  artist: string;
   image: ImageMetadata;
   url: string;
 }
