@@ -68,7 +68,7 @@ For a dedicated hardware metronome, a [BOSS Dr. Beat](https://www.boss.info/us/p
 
 ### When You're Ready
 
-#### Drum set
+#### Drums
 
 This is the goal!
 Once you feel comfortable with your hands playing simple rhythms, the whole world of drumming opens up to you.
@@ -81,6 +81,9 @@ My first kit was an orange Mapex M, these days I think the equivalent is the [Ma
 Electronic drum sets are great if you live in an apartment or need low-volume, and the entry point is slightly lower.
 I have never owned an electronic kit, so I'll point you to [Sweetwater's recommendations here](https://www.sweetwater.com/insync/best-electronic-drum-sets-for-beginners/).
 
+No matter what they're made of, You need a **4-piece**, minimum.
+That means kick (18-22"), snare (14"), rack tom(12"), and floor tom (16").
+
 #### Cymbals
 
 Cymbals also have a steep dropoff in quality if you go too low.
@@ -89,7 +92,14 @@ They sound awful, break quickly, and feel different to play.
 I recommend starting with B8 cymbals; they are bronze like professional cymbals, but with a slightly different alloy composition.
 My first cymbals were Zildjian ZBT's, and the modern equivalent would be the Zildjian I family (also check out Sabian B8X or Paiste PST5).
 
+A standard spread of cymbals is hihats (14"), a ride (18-21"), and one (16-18") (or two, add an 18-20") crash.
+
 #### Hardware
+
+**If your drums are a "shell pack," that means you need to buy hardware too!**
+Triple check the list of items included if it says hardware is included.
+You'll need a snare stand, a rack tom stand (either independent, like a snare stand, or a clamp to your cymbal stand or kick drum) a hihat stand, a stand for each cymbal you purchase, a kick pedal, and a drum throne (fancy word for a fancy seat).
+Most shell packs **do** include floor tom legs, but double check!
 
 I encourage you once more to search for quality in your drum hardware.
 Double-braced stands are a **must** for stability while playing and durability if you need to move your kit often.
