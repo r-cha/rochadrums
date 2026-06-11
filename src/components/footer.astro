@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import type { FooterLink } from "~/types";
 import { Image } from "astro:assets";
 import hero from "~/assets/hero_landscape.jpg";
@@ -46,7 +46,7 @@ const links: Array<FooterLink> = [
             href={link.url}
           >
             <span class="sr-only">{link.description}</span>
-            <Icon class="h-full" name={link.icon} />
+            <Icon class="h-full w-full" name={link.icon} />
           </a>
         </li>
       ))
