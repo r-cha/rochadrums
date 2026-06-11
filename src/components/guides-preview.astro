@@ -1,23 +1,32 @@
 ---
 import { getCollection } from "astro:content";
+import ContentSection from "~/components/content-section.astro";
 
 const guides = (await getCollection("guides")).sort(
-  (a, b) => a.data.order - b.data.order,
+  (a, b) => a.data.order - b.data.order
 );
 
 const getGuidePath = (id: string) => id.replace(/\.(md|mdx)$/, "");
 ---
 
-<div id="guides" class="grid max-w-6xl grid-cols-1 gap-4 md:grid-cols-2">
-  {
-    guides.map((guide) => (
-      <article class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
-        <p class="text-center font-extrabold text-xl">{guide.data.title}</p>
-        <p class="text-center text-offset text-sm">{guide.data.description}</p>
-        <a class="inline-flex font-semibold text-secondary" href={`/guides/${getGuidePath(guide.id)}/`}>
-          Read guide
-        </a>
-      </article>
-    ))
-  }
-</div>
+<ContentSection title="Guides" id="guides">
+  <div class="flex w-full max-w-6xl flex-wrap justify-center gap-4">
+    {
+      guides.map((guide) => (
+        <article class="flex w-full max-w-xl flex-col items-center gap-4 border border-default bg-offset p-6">
+          <h3 class="text-center font-extrabold text-xl">{guide.data.title}</h3>
+          <p class="text-center text-offset text-sm">
+            {guide.data.description}
+          </p>
+          <a
+            class="inline-flex font-semibold text-secondary"
+            href={`/guides/${getGuidePath(guide.id)}/`}
+          >
+            Read guide
+          </a>
+        </article>
+      ))
+    }
+  </div>
+  <a class="font-semibold text-secondary" href="/guides/">All guides &rarr;</a>
+</ContentSection>

@@ -6,8 +6,7 @@ import { getPortfolio } from "~/data/portfolio";
 const albums = await getPortfolio();
 ---
 
-<ContentSection title="Music" id="music" srOnly>
-  <Fragment slot="lead"></Fragment>
+<ContentSection title="Music" id="music">
   <div class="max-w-6xl space-y-4">
     <!-- First 6 albums: 2 rows of 3 -->
     <div class="grid grid-cols-2 gap-4 md:grid-cols-3">
